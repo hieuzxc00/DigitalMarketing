@@ -1,0 +1,16 @@
+/*==========================================================================*/
+/*                              F O O T E R                                 */
+/*==========================================================================*/
+
+footer {}
+
+address {
+    text-align: center;
+    background-color: var(--color-black);
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 15px;
+    a {
+        color: inherit;
+    }
+}

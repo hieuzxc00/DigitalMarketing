@@ -1,0 +1,99 @@
+/*==========================================================================*/
+/*                        M O B I L E    D E V I C E                        */
+/*==========================================================================*/
+
+@media screen and (min-width: 1px) and (max-width: 750px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    button,
+    textarea,
+    select,
+    p,
+    blockquote,
+    th,
+    td,
+    pre,
+    address,
+    li,
+    dt,
+    dd {
+        font-size: 14px;
+    }
+    
+    #wrapper {
+        min-width: unset !important;
+    }
+
+    .pc {
+        display: none !important;
+    }
+
+    * {
+        column-gap: none !important;
+        row-gap: none !important;
+    }
+
+    .inner {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+    /* END min-width:1px && screen-max:750px */
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 750px) {
+    .sp320 {
+        display: none;
+    }
+    /* END min-width:375px && screen-max:750px */
+}
+
+
+
+@media screen and (min-width: 425px) and (max-width: 750px) {
+    .sp375 {
+        display: none;
+    }
+    /* END min-width:425px && screen-max:750px */
+}
+
+
+
+@media screen and (min-width: 525px) and (max-width: 750px) {
+    .sp425 {
+        display: none;
+    }
+    /* END min-width:525px && screen-max:750px */
+}
+
+
+
+/*==========================================================================*/
+/*                 F O R   S P E C I F I E D   B R O W S E R                */
+/*==========================================================================*/
+
+@supports (-ms-ime-align: auto) {
+    /* EDGE  */
+}
+
+@-moz-document url-prefix() {
+    /* FIREFOX */
+}
+
+@supports (-webkit-touch-callout: none) {
+    /* Safari 10.1+ (which is the latest version of Safari at this time) */
+}
+
+/*==========================================================================*/
+/*                             E N D   A L L                                */
+/*==========================================================================*/
