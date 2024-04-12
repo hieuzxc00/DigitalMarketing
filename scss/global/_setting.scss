@@ -1,16 +1,14 @@
 :root {
     --content-width: 1230px;
-    --font-yugothic: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
-    --font-yumincho: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝B", serif;
-    --font-meiryo: "Meiryo UI", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
     --font-arial: Arial, Helvetica, sans-serif;
     --cl-primary: #0e6287;
     --cl-2nd: #50a5cc;
+    --cl-3rd: #0381a1;
     --cl-black: #333333;
     --cl-gray: #dddddd;
     --cl-white: #ffffff;
     --text-line-height: 1.8em;
-    --font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+    --font-family: "Montserrat", sans-serif;
     --body-cl: #333333;
 }
 
@@ -33,7 +31,7 @@ address,
 li,
 dt,
 dd {
-    font-size: 160%;
+    font-size: 150%;
     -webkit-text-size-adjust: none;
     font-family: var(--font-family);
 }
@@ -146,79 +144,4 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-/*==========================================================================*/
-/*             W O R D P R E S S   U S E R   L O G G E D   I N              */
-/*==========================================================================*/
-
-.customize-support {
-    header {
-        margin-top: 32px;
-    }
-}
-
-@media screen and (max-width: 782px) {
-    .customize-support {
-        header {
-            margin-top: 46px !important;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .customize-support {
-        header {
-            margin-top: 0px !important;
-        }
-    }
-}
-
-
-
-#wpadminbar .show-template-name,
-#wpadminbar .hover .show-template-name {
-    text-shadow: none;
-}
-
-#wpadminbar #wp-admin-bar-included_files_path .ab-item {
-    height: auto;
-    padding-bottom: 1rem;
-}
-
-#wpadminbar #wp-admin-bar-included_files_path .ab-item div {
-    font-family: monospace;
-    text-shadow: none;
-    color: #fff;
-}
-
-#wpadminbar .hover .show-template-name:hover {
-    color: #2ea2cc;
-}
-
-#wpadminbar #wp-admin-bar-included_files_path .ab-item #included-files-list li {
-    line-height: 1.5;
-}
-
-#wpadminbar #wp-admin-bar-included_files_path .ab-item #included-files-list li:hover {
-    color: #2ea2cc;
-}
-
-#wpadminbar #included-files-list {
-    margin-left: 20px;
-}
-
-#wp-admin-bar-show_template_file_name_on_top-default {
-    max-height: 90vh;
-    overflow-x: hidden;
-}
-
-#included-files-fie-on-wp-footer {
-    display: none;
-}
-
-#wpadminbar #wp-admin-bar-aioseo-main .aioseo-logo {
-    display: inline-block !important;
-    height: 23px !important;
-    transform: translateY(6px);
 }

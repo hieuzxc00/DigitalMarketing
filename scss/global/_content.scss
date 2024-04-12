@@ -2,6 +2,73 @@
 /*                                M A I N                                   */
 /*==========================================================================*/
 
-main {
-    
+.idx-main {
+    .intro {
+        padding: 40px 0 60px;
+        background: var(--cl-3rd);
+        .intro-desc {
+            color: var(--cl-white);
+        }
+        .intro-count {
+            display: flex;
+            justify-content: space-around;
+            .count-num {
+                margin-bottom: 15px;
+                @include text(42px, var(--font-family), 500, var(--cl-white));
+                text-align: center;
+            }
+            .count-title {
+                text-align: center;
+            }
+            .count-item {
+                color: var(--cl-white);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .detail {
+        position: relative;
+        padding: 60px 0;
+        background: rgb(240, 240, 240);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top: 30px solid var(--cl-3rd);
+            border-left: 30px solid rgba(0, 0, 0, 0);
+            border-right: 30px solid rgba(0, 0, 0, 0);
+        }
+        .inner {
+            display: flex;
+            column-gap: 60px;
+        }
+        .detail-item {
+            width: 50%;
+        }
+    }
+
+    .tutorial {
+        position: relative;
+        padding: 60px 0;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top: 30px solid rgb(240, 240, 240);
+            border-left: 30px solid rgba(0, 0, 0, 0);
+            border-right: 30px solid rgba(0, 0, 0, 0);
+        }
+        .tutorial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px 20px;
+        }
+    }
 }
