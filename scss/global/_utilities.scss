@@ -106,8 +106,8 @@
 
 .to-top {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
     transition: all 0.2s;
     transform-origin: 50% 100%;
     opacity: 0;
@@ -115,16 +115,16 @@
     &>a {
         display: block;
         cursor: pointer;
-        @include size(60px);
-        background: var(--color-primary);
+        @include size(40px);
+        background: var(--cl-2nd);
         border-radius: 0px;
         text-decoration: none;
         &:before {
-            --size: 14px;
+            --size: 12px;
             @include pseudo;
             @include size(var(--size));
-            border-top: solid 3px #fff;
-            border-right: solid 3px #fff;
+            border-top: solid 2px #fff;
+            border-right: solid 2px #fff;
             transform: rotateZ(-45deg);
             left: calc(50% - var(--size) / 2);
             top: calc(56% - var(--size) / 2);

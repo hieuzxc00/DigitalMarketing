@@ -93,6 +93,42 @@ jQuery(window).bind('load', function() {
             variableWidth: false,
         });
     }
+
+    if( jQuery('.feedback-slider').length > 0 ) {
+        jQuery('.feedback-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 600,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: true,
+            centerMode: false,
+            centerPadding: 0,
+            pauseOnHover: false,
+            fade: false,
+            variableWidth: false,
+        });
+    }
+
+    if( jQuery('.news-post').length > 0 ) {
+        jQuery('.news-post').slick({
+            dots: true,
+            infinite: true,
+            speed: 600,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            centerMode: false,
+            centerPadding: 0,
+            pauseOnHover: false,
+            fade: false,
+            variableWidth: false,
+        });
+    }
     /*============== END - SLIDER ================*/
 
     // CONTENT LOAD ANIMATION

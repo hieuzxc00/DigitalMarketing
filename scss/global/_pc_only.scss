@@ -24,6 +24,27 @@
     .to-top a:hover {
         opacity: 0.7;
     }
+
+    .idx-main .tutorial .tutorial-item:hover {
+        .tutorial-img img{
+            transform: scale(1.1);
+        }
+        .tutorial-btn {
+            color: var(--cl-black);
+            &::after {
+                height: 3px;
+                width: 100%;
+                background: var(--cl-black);
+            }
+        }
+    }
+
+    .idx-main .news .post-item a:hover {
+        .post-item-short {
+            color: #1aa0f4;
+            font-weight: 500;
+        }
+    }
     
     /* END screen-min:751px */
 }
