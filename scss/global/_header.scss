@@ -71,7 +71,10 @@
     }
     
     &-logo {
-        width: 240px;
+        img {
+            height: 65px;
+            object-fit: contain;
+        }
     }
 
     &-bottom {

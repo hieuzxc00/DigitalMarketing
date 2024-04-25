@@ -1,2 +1,2 @@
-@media screen and (min-width: 751px){.wp-pagenavi a:hover,.pagination a:hover{opacity:0.8}}@media screen and (min-width: 1px) and (max-width: 750px){.image-l,.image-r{float:none;text-align:center;margin:0 0 25px}}@-moz-document url-prefix(){}
+@media screen and (min-width: 751px){.wp-pagenavi a:hover,.pagination a:hover{opacity:0.8}.post-main .tbl .tbl-list li a:hover{text-decoration:underline}.post-main .related-wrap .related-item:hover{transform:translateY(-10px)}}@media screen and (min-width: 1px) and (max-width: 750px){.image-l,.image-r{float:none;text-align:center;margin:0 0 25px}}@-moz-document url-prefix(){}
 /*# sourceMappingURL=under_responsive.css.map */

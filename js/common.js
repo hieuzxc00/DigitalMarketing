@@ -2,7 +2,7 @@
 jQuery(window).bind('load', function() {
     "use strict";
     // ANCHOR LINK
-    var offset_PC = 0; /* offset header in PC (px) */
+    var offset_PC = 30; /* offset header in PC (px) */
     var offset_SP = 0; /* offset header in SP (px) */
     function anchorLink(el) {
 
@@ -123,15 +123,15 @@ jQuery(document).ready(function() {
 
 
     // CHANGE TAB
-    // jQuery('[data-tab]').click(function() {
-    //     var group = jQuery(this).data('tab-group');
-    //     var index = jQuery(this).data('tab');
-    //     jQuery('[data-tab][data-tab-group="' + group + '"].active').removeClass('active');
-    //     jQuery(this).addClass('active');
+    jQuery('[data-tab]').click(function() {
+        var group = jQuery(this).data('tab-group');
+        var index = jQuery(this).data('tab');
+        jQuery('[data-tab][data-tab-group="' + group + '"].active').removeClass('active');
+        jQuery(this).addClass('active');
 
-    //     jQuery('[data-tab-content][data-tab-group="' + group + '"].active').removeClass('active');
-    //     jQuery('[data-tab-content="' + index + '"][data-tab-group="' + group + '"]').addClass('active');
-    // });
+        jQuery('[data-tab-content][data-tab-group="' + group + '"].active').removeClass('active');
+        jQuery('[data-tab-content="' + index + '"][data-tab-group="' + group + '"]').addClass('active');
+    });
     // =========== END - CHANGE TAB ============
 
 
